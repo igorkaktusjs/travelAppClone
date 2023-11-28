@@ -62,7 +62,7 @@ const Page = () => {
         </View>
       ),
       headerLeft: () => (
-        <TouchableOpacity style={styles.roundButton} onPress={shareListing}>
+        <TouchableOpacity style={styles.roundButton} onPress={() => navigation.goBack()}>
           <Ionicons name="chevron-back" size={22} color="#000" />
         </TouchableOpacity>
       ),

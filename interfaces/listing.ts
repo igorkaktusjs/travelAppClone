@@ -55,8 +55,8 @@ export interface Listing {
     smart_location: string;
     country_code: string;
     country: string;
-    latitude: string;
-    longitude: string;
+    latitude: number | string;
+    longitude: number | string;
     property_type: string;
     room_type: string;
     accommodates: number;
