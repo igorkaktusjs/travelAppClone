@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet } from 'react-native'
-import React from 'react'
+import React, {memo} from 'react'
 import { Marker, PROVIDER_GOOGLE } from 'react-native-maps'
 import { defaultStyles} from '@/constants/Styles'
 import {ListingGeo} from '@/interfaces/listingGeo'
@@ -12,7 +12,7 @@ interface Props {
 
 
 
-const ListingsMaps = ({listings} : Props) => {
+const ListingsMaps = memo(({listings} : Props) => {
 
     const router = useRouter();
 
@@ -81,7 +81,7 @@ const ListingsMaps = ({listings} : Props) => {
         ))}</MapView>
     </View>
   )
-}
+});
 
 const styles = StyleSheet.create({
     container: {

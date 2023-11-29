@@ -1,4 +1,4 @@
-export interface ListingGeo {
+export interface ListingsGeo {
     type: string;
     geometry: Geometry;
     properties: Properties;
